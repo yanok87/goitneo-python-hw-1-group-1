@@ -1,3 +1,4 @@
+'''This module contains a function that returns birthday reminder'''
 from datetime import datetime
 from collections import defaultdict
 
@@ -16,6 +17,7 @@ from collections import defaultdict
 ]"""
 
 def get_birthdays_per_week(users):
+    '''This function returns birthday reminder'''
     res = defaultdict(list)
     today =  datetime.today().date()
     for user in users:
@@ -35,9 +37,7 @@ def get_birthdays_per_week(users):
                 if week_day < 5: # Birthday on week day
                     day_name = birthday_this_year.strftime('%A')
                     res[day_name].append(name)
-                
     for day, names in res.items():
         names_str = ", ".join(names)
         formated = f"{day}: {names_str}"
         print(formated)
-

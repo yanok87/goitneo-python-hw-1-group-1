@@ -3,7 +3,7 @@ from datetime import datetime
 from collections import defaultdict
 
 
-"""test_users = [
+'''test_users = [
     {"name": "Bill Gates-sun", "birthday": datetime(1955, 2, 18)},
     {"name": "Bill Gates-mon", "birthday": datetime(1955, 2, 19)},
     {"name": "Yana", "birthday": datetime(1955, 2, 20)},
@@ -14,7 +14,7 @@ from collections import defaultdict
     {"name": "Elison", "birthday": datetime(1955, 2, 25)},
     {"name": "Dan-sat", "birthday": datetime(1955, 2, 26)},
     {"name": "Dan-sun", "birthday": datetime(1955, 2, 27)},
-]"""
+]'''
 
 def get_birthdays_per_week(users):
     '''This function returns birthday reminder'''
@@ -41,3 +41,5 @@ def get_birthdays_per_week(users):
         names_str = ", ".join(names)
         formated = f"{day}: {names_str}"
         print(formated)
+
+
